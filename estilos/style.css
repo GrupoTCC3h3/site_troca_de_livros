@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* Paleta de Cores */
+:root {
+    --marromEscuro: #261c1a;
+    --marromClaro: #ac8f83;
+    --marromMaisClaro: #ada0a2;
+    --marromSuperClaro: #d5ccc7;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    color: var(--marromEscuro);
+    height: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header > h2 {
+    color: var(--marromClaro);
+}
+
+header > p, a, button {
+    color: var(--marromClaro)
+}
+
+header a {
+    text-decoration: none;
+}
+
+header button {
+    background-color: #ac8f83;
+    color: white;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.imagem-frase > img {
+    width: 520px;
+    height: 230px;
+}
