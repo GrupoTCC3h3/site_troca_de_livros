@@ -16,9 +16,9 @@
     box-sizing: border-box;
 }
 
-body, html {
+/* body, html {
     height: 100dvh;
-}
+} */
 
 header {
     color: var(--marromEscuro);
@@ -77,6 +77,10 @@ main p {
     align-items: center;
 }
 
+#btnCadastre {
+    margin-bottom: 100px;
+}
+
 .btnTelaInicial {
     color: white;
     background-color: var(--marromClaro);
@@ -95,7 +99,7 @@ footer {
     color: white;
     font-weight: bold;
     width: 100%;
-    height: 100px;
+    height: auto;
     padding: 30px;
     text-align: left;
 }
