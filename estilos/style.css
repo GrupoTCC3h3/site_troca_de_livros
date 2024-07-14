@@ -16,9 +16,11 @@
     box-sizing: border-box;
 }
 
-/* body, html {
-    height: 100dvh;
-} */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 header {
     color: var(--marromEscuro);
@@ -52,6 +54,9 @@ header button {
     cursor: pointer;
 }
 
+main {
+    flex: 1;
+}
 
 .imagem-frase > img {
     width: 100%;
