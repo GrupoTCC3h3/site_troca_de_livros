@@ -90,3 +90,24 @@ main p {
     cursor: pointer;
 }
 
+footer {
+    background-color: var(--marromClaro);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 100px;
+    padding: 30px;
+    text-align: left;
+}
+
+.contato {
+    margin-bottom: 10px;
+}
+
+.contato a {
+    color: rgb(67, 67, 241);
+    text-decoration: none;
+    padding: 10px;
+}
+
+
