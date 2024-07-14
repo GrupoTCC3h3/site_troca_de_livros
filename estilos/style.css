@@ -17,8 +17,7 @@
 }
 
 body, html {
-    width: 100vw;
-    height: 100vh;
+    height: 100dvh;
 }
 
 header {
@@ -55,7 +54,39 @@ header button {
 
 
 .imagem-frase > img {
-    display: block;
     width: 100%;
-    height: 230px;
+    height: auto;
 }
+
+main > h3 {
+    color: var(--marromClaro);
+    text-align: center;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+main p {
+    padding: 35px;
+    text-align: justify;
+    line-height: 35px;
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnTelaInicial {
+    color: white;
+    background-color: var(--marromClaro);
+    border-radius: 10px;
+    border: none;
+    width: 80%;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
