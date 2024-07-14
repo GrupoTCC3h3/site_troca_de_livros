@@ -17,8 +17,7 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    position: relative;
     min-height: 100vh;
 }
 
@@ -54,10 +53,6 @@ header button {
     cursor: pointer;
 }
 
-main {
-    flex: 1;
-}
-
 .imagem-frase > img {
     width: 100%;
     height: auto;
@@ -74,6 +69,7 @@ main p {
     padding: 35px;
     text-align: justify;
     line-height: 35px;
+    margin-bottom: 50px;
 }
 
 .container-button {
@@ -83,7 +79,7 @@ main p {
 }
 
 #btnCadastre {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .btnTelaInicial {
@@ -94,17 +90,18 @@ main p {
     width: 80%;
     padding: 10px 20px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 16px;
     cursor: pointer;
-}
 
+}
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: var(--marromClaro);
     color: white;
     font-weight: bold;
-    width: 100%;
-    height: auto;
     padding: 30px;
     text-align: left;
 }
