@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/* Paleta de Cores */
+:root {
+    --marromEscuro: #261c1a;
+    --marromClaro: #ac8f83;
+    --marromMaisClaro: #ada0a2;
+    --marromSuperClaro: #d5ccc7;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--marromMaisClaro);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+form {
+    color: white;
+    position: relative;
+    background-color: var(--marromClaro);
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form > button.btnCadastrar {
+    background-color: white;
+    color: var(--marromClaro);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+}
+
+form > button.btnCadastrar:hover {
+    background-color: var(--marromMaisClaro);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div.campo {
+    background-color: var(--marromMaisClaro);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 70%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+div.campo i {
+    padding: 10px;
+}
+
+div.campo input {
+    background-color: var(--marromMaisClaro);
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 45px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+label {
+    cursor: pointer;
+}
+
+div.containerLembrarEEsqueci {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+div.containerLembrarEEsqueci > a {
+    text-decoration: none;
+    color: white;
+}
+
+div.containerLembrarEEsqueci > a:hover{
+    color: var(--marromEscuro);
+    text-decoration: underline;
+}
+
+input#entrar{
+    background-color: white;
+    color: var(--marromClaro);
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 70%;
+    height: 45px;
+}
+
+input#entrar:hover{
+    background-color: var(--marromMaisClaro);
+    color: white;
+}
