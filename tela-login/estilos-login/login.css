@@ -8,19 +8,18 @@
     --marromSuperClaro: #d5ccc7;
 }
 
-
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
-
 body, html {
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     background-color: var(--marromMaisClaro);
+    color: white; /* Melhora o contraste de texto */
 }
 
 main {
@@ -33,47 +32,40 @@ main {
 }
 
 form {
-    color: white;
     position: relative;
     background-color: var(--marromClaro);
     width: 80%;
-    height: 80%;
+    max-width: 400px; /* Limita a largura máxima do formulário */
+    height: auto; /* Ajustado para ser responsivo */
+    padding: 20px;
     border-radius: 20px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 form > button.btnCadastrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     background-color: white;
     color: var(--marromClaro);
     border: none;
     border-radius: 10px;
     font-weight: bold;
     padding: 10px;
-    position: absolute;
-    top: 10px;
-    right: 10px; 
+    cursor: pointer;
 }
 
 form > button.btnCadastrar:hover {
     background-color: var(--marromMaisClaro);
     color: white;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 div.campo {
-    background-color: var(--marromMaisClaro);
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 70%;
-    height: 45px;
+    margin: 15px 0;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    background-color: var(--marromMaisClaro);
     border-radius: 15px;
 }
 
@@ -85,10 +77,10 @@ div.campo input {
     background-color: var(--marromMaisClaro);
     border: none;
     outline: none;
-    width: 100%;
+    flex: 1;
     height: 45px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 0 15px 15px 0;
+    padding: 0 15px;
 }
 
 label {
@@ -97,9 +89,10 @@ label {
 
 div.containerLembrarEEsqueci {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-top: 15px;
 }
 
 div.containerLembrarEEsqueci > a {
@@ -107,12 +100,12 @@ div.containerLembrarEEsqueci > a {
     color: white;
 }
 
-div.containerLembrarEEsqueci > a:hover{
+div.containerLembrarEEsqueci > a:hover {
     color: var(--marromEscuro);
     text-decoration: underline;
 }
 
-input#entrar{
+input#entrar {
     background-color: white;
     color: var(--marromClaro);
     font-weight: bolder;
@@ -120,11 +113,12 @@ input#entrar{
     border: none;
     border-radius: 15px;
     margin-top: 20px;
-    width: 70%;
+    width: 100%;
     height: 45px;
+    cursor: pointer;
 }
 
-input#entrar:hover{
+input#entrar:hover {
     background-color: var(--marromMaisClaro);
     color: white;
 }
