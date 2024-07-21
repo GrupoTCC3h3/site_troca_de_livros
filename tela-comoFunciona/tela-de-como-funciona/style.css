@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Paleta de Cores */
+:root {
+    --marromEscuro: #261c1a;
+    --marromClaro: #ac8f83;
+    --marromMaisClaro: #ada0a2;
+    --marromSuperClaro: #d5ccc7;
+}
+
+body, html {
+    position: relative;
+    min-height: 100vh;
+}
+
+header  > nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header > nav > h1 {
+    color: var(--marromClaro);
+}
+
+header > nav > a {
+    color: var(--marromClaro);
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header > nav > a:hover {
+    color: var(--marromEscuro);
+    text-decoration: underline;
+}
+
+header > nav > button {
+    background-color: var(--marromClaro);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+
+header > nav > button:hover {
+    background-color: var(--marromMaisClaro);
+}
+
+.imagem img {
+    max-width: 100%; /* garante que a imagem não ultrapasse a largura do contêiner pai */
+    height: auto;
+}
+
+/* Parei na estilização dos texto: 1<h2> */
+
+
+
+
+
+
+
+
